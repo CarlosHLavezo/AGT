@@ -1,14 +1,15 @@
 <div class="col-sm-9 col-sm-offset-2 col-md-10 col-md-offset-1 main">
    <h1 class="page-header">Contato(s)</h1>
-   
+
    <div class="row frm-pesq">
       <div class="panel panel-default">
          <div class="panel-heading">
             <h4>Editar</h4>
          </div>
          <div class="panel-body">
-            <form class="form-horizontal" action="#" method="GET" id="frm-cadastrar" url="<?php echo URL_SITE ?>">
-<div class="col-sm-6">
+            <form class="form-horizontal" action="#" method="GET" id="frm-edit" url="<?php echo URL_SITE ?>">
+               <input type="hidden" name="id" value="<?php echo $this->view->contact['id'] ?>" />
+               <div class="col-sm-6">
                   <div class="form-group">
                      <label class="col-sm-4 control-label" for="name">Nome</label>
                      <div class="col-sm-6">
@@ -22,7 +23,7 @@
                      <label class="col-sm-4 control-label" for="email">Email</label>
                      <div class="col-sm-6">
                         <input id="email" name="email" placeholder="email@.com.br" class="form-control input-md" required="true"
-                              type="text" value="<?php echo $this->view->contact['email'] ?>">
+                               type="text" value="<?php echo $this->view->contact['email'] ?>">
                      </div>
                   </div>
                </div>
@@ -40,7 +41,7 @@
                      <label class="col-sm-4 control-label" for="phone_number">Telefone Fixo</label>
                      <div class="col-sm-6">
                         <input id="phone_number" name="phone_number" placeholder="(99) 9 9999-9999" 
-                              class="form-control input-md" type="text" value="<?php echo $this->view->contact['phone_number'] ?>">
+                               class="form-control input-md" type="text" value="<?php echo $this->view->contact['phone_number'] ?>">
                      </div>
                   </div>
                </div>

@@ -22,6 +22,9 @@ class Route extends Bootstrap {
       $routes['contact/edit'] = [
          'route' => '/contact/edit', 'controller' => 'ContactController', 'action' => 'edit'
       ];
+      $routes['contact/update'] = [
+         'route' => '/contact/update', 'controller' => 'ContactController', 'action' => 'update'
+      ];
       $routes['contact/delete'] = [
          'route' => '/contact/delete', 'controller' => 'ContactController', 'action' => 'delete'
       ];

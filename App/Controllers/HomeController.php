@@ -13,6 +13,9 @@ use AGT\DI\Container; //Dependency Injection
 class HomeController extends Action {
    
    public function index() {
+      
+      $contact = Container::getModel('Contact');
+      $this->view->contact = $contact->find([]);
       $this->render('index');
    }
    
