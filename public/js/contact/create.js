@@ -16,4 +16,7 @@ $(function() {
          dataType: 'json'
       });
    });
+   
+   $('#cell_number').mask('(00) 0 0000-0000');
+   $('#phone_number').mask('(00) 0000-0000');
 });
