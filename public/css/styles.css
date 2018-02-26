@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 25, 2018, 8:11:20 PM
+    Author     : carlos
+*/
+
+body {
+  padding-top: 40px;
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+.main {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+.btn-cad {
+  margin-top: -10px;
+}
+.frm-pesq {
+  margin-top: 70px;
+}

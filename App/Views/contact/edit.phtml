@@ -1,0 +1,59 @@
+<div class="col-sm-9 col-sm-offset-2 col-md-10 col-md-offset-1 main">
+   <h1 class="page-header">Contato(s)</h1>
+   
+   <div class="row frm-pesq">
+      <div class="panel panel-default">
+         <div class="panel-heading">
+            <h4>Editar</h4>
+         </div>
+         <div class="panel-body">
+            <form class="form-horizontal" action="#" method="GET" id="frm-cadastrar" url="<?php echo URL_SITE ?>">
+<div class="col-sm-6">
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="name">Nome</label>
+                     <div class="col-sm-6">
+                        <input id="name" name="name" placeholder="Nome" class="form-control input-md" required="true"
+                               type="text" value="<?php echo $this->view->contact['name'] ?>"> 
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="email">Email</label>
+                     <div class="col-sm-6">
+                        <input id="email" name="email" placeholder="email@.com.br" class="form-control input-md" required="true"
+                              type="text" value="<?php echo $this->view->contact['email'] ?>">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="cell_number">Celular</label>
+                     <div class="col-sm-6">
+                        <input id="cell_number" name="cell_number" placeholder="(99) 9 9999-9999" required="true"
+                               class="form-control input-md" type="text" value="<?php echo $this->view->contact['cell_number'] ?>">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6"><!-- Text input-->
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="phone_number">Telefone Fixo</label>
+                     <div class="col-sm-6">
+                        <input id="phone_number" name="phone_number" placeholder="(99) 9 9999-9999" 
+                              class="form-control input-md" type="text" value="<?php echo $this->view->contact['phone_number'] ?>">
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <div class="panel-footer">
+            <div class="btn-group col-md-offset-5">
+               <div class="col-sm-12">
+                  <button type="button" id="submit" class="btn btn-primary">Gravar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="<?php echo URL_SITE; ?>/js/contact/edit.js" type="text/javascript"></script>
